@@ -1,0 +1,12 @@
+name: Test Self Hosted
+
+on:
+  push:
+
+jobs:
+  test:
+    runs-on: self-hosted
+
+    steps:
+      - name: Show message
+        run: echo Hello from my own PC
